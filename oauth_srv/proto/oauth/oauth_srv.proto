@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package zw.com.srv.oauth;
+
+import "oauth.proto";
+
+service OauthSrv {
+	rpc PingPong(stream Ping) returns (stream Pong) {}
+}

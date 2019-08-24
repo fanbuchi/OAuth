@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package zw.com.srv.oauth;
+
+message Ping {
+	int64 stroke = 1;
+}
+
+message Pong {
+	int64 stroke = 1;
+}

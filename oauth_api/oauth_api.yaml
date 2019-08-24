@@ -1,0 +1,16 @@
+oauth_api:
+  zap:
+    level: "debug"
+    development: true
+  svr_name:
+    oauth: "go.micro.svr.oauth"
+
+jaeger_tracer:
+#  sampler:
+#    type: "const"
+#    param: 1
+  reporter:
+    logSpans: true
+    localAgentHostPort: "192.168.2.118:5775"
+hystrix:
+  addr: ":81"

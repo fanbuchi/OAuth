@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package zw.com.srv.user;
+
+import "user.proto";
+
+service UserSrv {
+    rpc PingPong (stream Ping) returns (stream Pong) {
+    }
+    rpc CheckPwd (CheckPwd) returns (Bool) {
+    }
+}

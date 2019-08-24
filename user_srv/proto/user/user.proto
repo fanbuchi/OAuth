@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package zw.com.srv.user;
+
+message Ping {
+    int64 stroke = 1;
+}
+
+message Pong {
+    int64 stroke = 1;
+}
+
+message ReqCheckPwd {
+    string account = 1;
+    string pwd = 2;
+}
+
+message Bool {
+    bool b = 1;
+}
